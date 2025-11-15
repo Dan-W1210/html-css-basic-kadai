@@ -3,7 +3,8 @@ html{
 }
 
 body{
-  font-family: "Arial", "Meiryo", sans-serif  
+  text-align: center;
+  font-family: "Arial", "Meiryo", sans-serif
 }
 
 h1{
@@ -11,10 +12,8 @@ h1{
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  font-size: 2rem;
-  letter-spacing: 2.4em;
+  letter-spacing: 1.2em;
   text-shadow: 1px 2px 3px rgb(71, 71, 71);
-  text-align: center;
   border-bottom: 3px solid rgb(115, 115, 114);
 }
 
@@ -24,14 +23,8 @@ h1{
 
 .blue{
   color: skyblue;
-  text-align: center;
 }
 
 .pink{
   color: rgb(255, 192, 203);
-  text-align: center;
-}
-
-p{
-  text-align: center;
 }
