@@ -23,13 +23,15 @@
   height: 800px;
   background-color: #ffd9df;
 }
+#middle div{
+  background-color: #87ceeb;
+}
 #middle-child01 {
   position: relative;
   top: 100px;
   left: 100px;
   width: 200px;
   height: 200px;
-  background-color: #87ceeb;
 }
 #middle-child02 {
   position: absolute;
@@ -37,7 +39,6 @@
   left: 300px;
   width: 200px;
   height: 200px;
-  background-color: #87ceeb;
 }
 #middle-child03 {
   position: absolute;
@@ -45,7 +46,6 @@
   left: 500px;
   width: 200px;
   height: 200px;
-  background-color: #87ceeb;
 }
 #bottom {
   position: relative;
@@ -54,25 +54,23 @@
   height: 300px;
   background-color: #87ceeb;
 }
-#bottom-child01 {
-  position: relative;
-  width: 400px;
-  height: 100px;
+#bottom div {
   background-color: #e5dcf0;
 }
+#bottom-child01 {
+  position: relative 0;
+  width: 400px;
+  height: 100px;
+}
 #bottom-child02 {
-  position: absolute;
-  top: 100px;
+  position: relative;
   left: 200px;
   width: 400px;
   height: 100px;
-  background-color: #e5dcf0;
 }
 #bottom-child03 {
-  position: absolute;
-  top: 200px;
+  position: relative;
   left: 400px;
   width: 400px;
   height: 100px;
-  background-color: #e5dcf0;
 }
