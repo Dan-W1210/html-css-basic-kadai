@@ -1,0 +1,89 @@
+body {
+  /*margin0,font-sizeは20px*/ 
+  margin: 0;
+}
+
+header {
+  /*下の余白を20pxにします。
+  背景色を「 rgb(244, 79, 79)」にします。
+  中の要素が中央揃えになるようにします。*/
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+
+h1 {
+  /*margin0,font-sizeは20px,
+  文字色をrgb(255, 255, 255)にします。*/ 
+  margin: 0;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+}
+main {
+  /*余白を上下左右とも10pxにします。*/
+  margin: 10px;
+}
+#parent {
+  /*displayプロパティを使い、id名parentの要素をFlexコンテナにします。
+  justify-contentプロパティでFlexboxコンテナの子要素（Flexアイテム）
+  「一番左と一番右のアイテムも含め、均等な間隔で配置する」値を設定します。*/
+  display: flex;
+  justify-content: space-between;
+}
+#parent .contents {
+  margin: 10px;
+
+}
+.contents {
+  /*線（太さ3px、実線、色rgb(238, 204, 204)）で要素を囲います。
+  幅は親要素の25%にします。プロパティはwidthではなく、flex-basisを使ってください。
+  要素内の余白は上下10px、左右15pxにします。
+  要素外の余白は上下20px、左右0にします。
+  中の要素が中央揃えになるようにします。*/
+  flex-basis: 25%;
+  border: solid 3px rgb(238, 204, 204);
+  padding: 10px 15px;
+  margin: 20px 0;
+  text-align: center;
+}
+image {
+  margin: 10px 0;
+  width: 70%;
+}
+p:nth-of-type(2)::first-letter{
+  /*nth-of-type(n)とfirst-letterを組み合わせると表現できます。
+  太字
+  文字色はrgb(97, 206, 249)*/
+font-weight: bold;
+color: rgb(97, 206, 249);
+
+}
+h2 {
+  /*h2要素のフォントサイズを25pxにし、下線（太さ3px、点線、色rgb(236, 122, 122)）を引きます。
+  h2要素の前に「●」記号を表示します。色はrgb(239, 111, 139)とします。*/
+  font-size: 25px;
+  border-bottom: dotted rgb(236, 122, 122);
+}
+h2::before {
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+p {
+  /*margin0,font-sizeは20px*/ 
+  margin: 0px;
+  font-size: 20px;
+}
+.contents image{
+  margin: 10px 0px;
+  width: 70%;
+}
+footer {
+  /*背景色はrgb(244, 79, 79)にします。
+  中身の要素が中央揃えになるようにします。*/  
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+    body {
+      display: block;
+    }
+}
