@@ -21,7 +21,7 @@ h1 {
 }
 main {
   /*余白を上下左右とも10pxにします。*/
-  margin: 10px;
+  padding: 10px;
 }
 #parent {
   /*displayプロパティを使い、id名parentの要素をFlexコンテナにします。
@@ -29,6 +29,7 @@ main {
   「一番左と一番右のアイテムも含め、均等な間隔で配置する」値を設定します。*/
   display: flex;
   justify-content: space-between;
+ 
 }
 #parent .contents {
   margin: 10px;
@@ -46,7 +47,7 @@ main {
   margin: 20px 0;
   text-align: center;
 }
-image {
+.contents img {
   margin: 10px 0;
   width: 70%;
 }
@@ -62,7 +63,7 @@ h2 {
   /*h2要素のフォントサイズを25pxにし、下線（太さ3px、点線、色rgb(236, 122, 122)）を引きます。
   h2要素の前に「●」記号を表示します。色はrgb(239, 111, 139)とします。*/
   font-size: 25px;
-  border-bottom: dotted rgb(236, 122, 122);
+  border-bottom: dotted 3px rgb(236, 122, 122);
 }
 h2::before {
   content: "●";
@@ -71,7 +72,6 @@ h2::before {
 p {
   /*margin0,font-sizeは20px*/ 
   margin: 0px;
-  font-size: 20px;
 }
 .contents image{
   margin: 10px 0px;
@@ -81,9 +81,22 @@ footer {
   /*背景色はrgb(244, 79, 79)にします。
   中身の要素が中央揃えになるようにします。*/  
   text-align: center;
+  background-color: rgb(244, 79, 79);
+}
+a:link {
+  color: rgb(255, 255, 255);
+}
+a:visited {
+  color: rgb(193, 234, 251)
+}
+a:hover {
+  color: rgb(245, 178, 168);
 }
 @media screen and (max-width: 768px) {
-    body {
+    #parent {
       display: block;
     }
+}
+p,a {
+  font-size: 20px;
 }
